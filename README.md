@@ -20,12 +20,15 @@ The project was developed with educational purposes under academic supervision.
   - Variable assignment  
 - External I/O functions (`readval`, `printval`)  
 
+
 ## Project Structure
 - **lfmc.cpp** – Main entry point, command-line options, and driver invocation  
 - **driver.cpp / driver.hpp** – Compiler driver, AST classes, and code generation with LLVM  
 - **parser.yy** – Grammar specification (Bison)  
 - **scanner.ll** – Lexical analyzer (Flex)  
 - **IO.cpp** – External I/O functions for interaction with the compiled programs  
+- **Makefile** – Build automation script
+
 
 ## Build Instructions
 Requirements:
