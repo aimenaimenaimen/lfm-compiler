@@ -1,0 +1,31 @@
+external readval()
+external printval(v)
+
+function f(x)
+   2*x-4
+end
+
+function g(x)
+   -x*f(x)
+end
+
+function fact(n)
+   if n==0 : 1;
+      true : n*fact(n-1) 
+   end
+end
+
+function funfact(x)
+  if y:=f(x) and y>=0: fact(y);
+     z:=g(y) or z*y>6: 3;
+     true: 0
+  end
+end
+
+function main()
+   let x = readval(),
+       y = funfact(x)
+   in printval(y)
+   end
+end
+
