@@ -31,6 +31,24 @@ The project was developed with educational purposes under academic supervision.
 Requirements:
 - **C++17 or later**  
 - **LLVM development libraries**  
-- **Flex** and **Bison**  
+- **Flex** and **Bison**
+
+## Usage
+./lfmc [options] <filename>
+
+
+## OPTIONS
+-v : Print a linear representation of ASTs to stdout
+-l : Generate a LaTeX file <filename>.tex representing ASTs (compilable with pdflatex)
+-c : Output LLVM-IR code to stderr
+-p : Enable parser tracing
+-s : Enable scanner/lexer tracing
+-h : Show help message
+
+## EXAMPLE
+
+./lfmc -v examples/fact.lfm
+./lfmc -c examples/fact.lfm | lli   # Run with LLVM interpreter
+
 
 
